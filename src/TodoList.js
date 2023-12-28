@@ -1,9 +1,13 @@
 
-function TodoList(props) {
+function TodoList({children}) {
   return (
-    <ul>
-      {props.children}
+
+    <nav className="bg-zinc-700 flex items-center justify-center flex-grow">
+      <ul>
+      {children}
     </ul>
+    </nav>    
+    
   );
 }
 
